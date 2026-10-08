@@ -1,276 +1,89 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Rodolfo Olivares Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-		
-        /* Estilo para las imágenes con ajuste proporcional */
-        .image.fit img {
-            width: 100%; /* La imagen ocupa todo el ancho disponible */
-            height: 400px; /* Mantiene la proporción de la imagen */
-            max-height: 320px; /* Limita la altura máxima de la imagen */
-            object-fit: 100px; /* Evita el recorte y ajusta la imagen dentro del contenedor */
-        }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rodolfo Olivares | Data Analyst | Data Science</title>
+  <meta name="description" content="Rodolfo Olivares, Data Analyst with experience in churn analytics, KPI design, A/B testing and machine learning (SQL, Python, R, BigQuery, Power BI). Based in Australia.">
+  <meta property="og:title" content="Rodolfo Olivares | Data Analyst | Data Science">
+  <meta property="og:description" content="Churn analytics, KPI design, A/B testing and machine learning. SQL, Python, R, BigQuery, Power BI.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <h1>Rodolfo Olivares</h1>
+      <p class="tagline">Data Analyst | Data Science</p>
+      <p class="lead">I turn data into decisions: churn analytics, KPI design, A/B testing and predictive modelling with SQL, Python and R. Chilean industrial engineer with a postgraduate diploma in Data Science and in Artificial Intelligence (PUC Chile), now in Australia and open to data analyst and data science roles.</p>
+      <p class="links">
+        <a class="btn" href="https://github.com/rolivaresIA/Curriculum/raw/main/Rodolfo_Olivares_CV.pdf">Download CV (PDF)</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/rodolivaresa/">LinkedIn</a>
+        <a class="btn ghost" href="https://github.com/rolivaresIA">GitHub</a>
+        <a class="btn ghost" href="mailto:rolivaresal@gmail.com">Email</a>
+      </p>
+      <p class="small">Work rights: Working Holiday visa (subclass 462), full work rights in Australia.</p>
+    </div>
+  </header>
 
-        /* Estilo para el contenedor de la imagen */
-        .image.fit {
-            width: 90%; /* El contenedor ocupa todo el ancho disponible */
-            max-width: 800px; /* Limita el tamaño máximo del contenedor */
-            margin: 10px auto; /* Centra el contenedor en la página */
-            display: block;
-        }
+  <main class="wrap">
+    <section id="projects">
+      <h2>Featured projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Competitor Contact &amp; Churn Impact Analytics</h3>
+          <p class="meta">Claro Chile | BigQuery, SQL, Looker Studio</p>
+          <p>Automated pipeline that detects competitor calls and measures 5-day port-out risk over ~700k calls per day. It found a high-risk segment (calls over 5 minutes, ~1% of answered calls) with 4-6x higher port-out probability and enabled early-retention outreach to ~600 customers daily.</p>
+          <p><a href="https://github.com/rolivaresIA/Competitor-Contact-Churn-Impact-Analytics">View on GitHub</a></p>
+        </article>
+        <article class="card">
+          <h3>Silent-Sales KPI Redesign</h3>
+          <p class="meta">Claro Chile | Python, scikit-learn, BigQuery</p>
+          <p>Validated a low-quality-sales KPI (67% precision, 9% recall) and used an interpretable decision tree to propose two new definitions: strict (91.5% precision) and broad (33% recall). Includes a runnable demo on synthetic data.</p>
+          <p><a href="https://github.com/rolivaresIA/Silents-KPI-Sales-Quality-Fraud-Detection">View on GitHub</a></p>
+        </article>
+        <article class="card">
+          <h3>Machinery Failure Telemetry Analysis</h3>
+          <p class="meta">SALFA | R, tidyverse, ranger, pROC</p>
+          <p>Data-quality pipeline, EDA and a machine-learning model (logistic regression vs random forest, grouped cross-validation, ROC and precision-recall) to prioritise critical machine alerts. Fully reproducible on synthetic data.</p>
+          <p><a href="https://github.com/rolivaresIA/Machinery-Failure-Telemetry-Analysis">View on GitHub</a></p>
+        </article>
+      </div>
+      <p class="more">More: <a href="https://github.com/rolivaresIA/School-Dropout-Dashboard-PowerBI">School dropout analysis (R + Power BI)</a> | <a href="https://github.com/rolivaresIA/EDA_Twitch">Twitch streamers EDA (R)</a> | <a href="https://github.com/rolivaresIA/Data_Cleaning_Project">E-commerce data cleaning (R)</a></p>
+    </section>
 
-		</style>
-	</head>
-	<body class="is-preload">
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul class="timeline">
+        <li><span class="what"><strong>Data Analyst, Business &amp; Churn Analytics</strong> | Claro Chile</span> <span>2025 - 2026</span></li>
+        <li><span class="what"><strong>Business Analyst, Telematics Analytics</strong> | Salinas y Fabres (SALFA)</span> <span>2021 - 2022</span></li>
+        <li><span class="what"><strong>Data Analytics Intern, Retirement Readiness</strong> | Principal Financial Group</span> <span>2019 - 2020</span></li>
+      </ul>
+    </section>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="timeline">
+        <li><span class="what"><strong>Postgraduate Diploma in Artificial Intelligence</strong> | Pontificia Universidad Católica de Chile</span> <span>2025</span></li>
+        <li><span class="what"><strong>Postgraduate Diploma in Data Science</strong> | Pontificia Universidad Católica de Chile</span> <span>2021</span></li>
+        <li><span class="what"><strong>BSc in Engineering (Industrial Engineering)</strong> | Universidad Adolfo Ibáñez</span> <span>2014 - 2020</span></li>
+      </ul>
+    </section>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Portfolio de Proyectos<br />
-						Rodolfo Olivares</h1>
-						<p>Data Analyst con experiencia en R, Python, SQL y Power BI<a href="https://html5up.net/license"></a>.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>SQL (BigQuery)</li><li>Python (pandas, scikit-learn)</li><li>R (tidyverse, ggplot2)</li>
+        <li>Power BI</li><li>Looker Studio</li><li>Tableau</li><li>Google Cloud Platform</li>
+        <li>A/B testing</li><li>Statistical analysis</li><li>Machine learning</li><li>KPI design</li><li>Git</li>
+      </ul>
+    </section>
+  </main>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Proyectos</a>
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Mis Proyectos</a></li>
-							<li><a href="about.html">Sobre Mí</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.instagram.com/fitolivares" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="https://www.linkedin.com/in/rodolivaresa/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/rolivaresIA" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
-
-					<!-- Main -->
-						<div id="main">
-
-							<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h1><a href="https://github.com/rolivaresIA/ML_Prediccion_Fallas_Maquinaria">Machine Learning:<br />
-									Predicción de fallas de maquinaria en Salfa</a></h1>
-									<p>Proyecto que busca predecir fallas de maquinarias mediante el uso de telemetría y herramientas de Machine Learning, específicamente
-									utilizando modelo de Random Forest. Con el objetivo principal de clasificar fallas, detectar
-									oportunidades de negocio y tomar acción comercial proactiva.</p>
-								</header>
-								<a href="https://github.com/rolivaresIA/ML_Prediccion_Fallas_Maquinaria" class="image main">
-									<img src="images/telemetria.jpeg" alt="" style="height:700px; object-fit:cover;" />
-								</a>
-								<ul class="actions special">
-									<li><a href="https://github.com/rolivaresIA/ML_Prediccion_Fallas_Maquinaria" class="button large">Proyecto Completo</a></li>
-								</ul>
-							</article>
-
-
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2><a href="https://github.com/rolivaresIA/Data_Cleaning_Project">Limpieza y<br />
-											transformación de datos</a></h2>
-									</header>
-									<a href="https://github.com/rolivaresIA/Data_Cleaning_Project" class="image fit"><img src="images/datacleaning.png" alt="" style="margin-bottom: 20px;"></a>
-									<p style="text-align: center; font-size: 19px;">Proyecto enfocado a la limpieza y transformación de bases de datos completamente sucias para el reconocido Ecommerce Shein, utilizando R.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/rolivaresIA/Data_Cleaning_Project" class="button">Proyecto Completo</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="https://github.com/rolivaresIA/EDA_Twitch">Análisis exploratorio de datos en Twitch <br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/rolivaresIA/EDA_Twitch" class="image fit"><img src="images/Twitch_Main.png" alt="" style="margin-bottom: 20px;"></a>
-									<p style="text-align: center; font-size: 19px;">Proyecto que busca ayudar a streamers emergentes a escalar sus comunidades mediante información analizada, de forma estratégica en Twitch.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/rolivaresIA/EDA_Twitch" class="button">Proyecto Completo</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="https://github.com/rolivaresIA/Visualizacion_Datos_MINSAL">Análisis y Visualización de datos MINEDUC<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/rolivaresIA/Visualizacion_Datos_MINSAL" class="image fit"><img src="images/Mineduc.png" alt="" style="margin-bottom: 20px;"></a>
-									<p style="text-align: center; font-size: 19px;">Proyecto que utiliza R y Power BI para analizar datos educativos, convirtiendo información compleja en visualizaciones interactivas para la toma de decisiones.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/rolivaresIA/Visualizacion_Datos_MINSAL" class="button">Proyecto Completo</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="https://github.com/rolivaresIA/Webscraping_Mercadolibre">Webscraping en MercadoLibre utilizando R<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/rolivaresIA/Webscraping_Mercadolibre" class="image fit"><img src="images/Mercado-Libre-3.png" alt="" style="margin-bottom: 20px;"></a>
-									<p style="text-align: center; font-size: 19px;">Proyecto que utiliza web scraping con R para extraer información de MercadoLibre, con el objetivo de analizar datos y obtener insights estratégicos.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/rolivaresIA/Webscraping_Mercadolibre" class="button">Proyecto Completo</a></li>
-									</ul>
-								</article>
-								
-								
-							</section>
-
-						<!-- Footer -->
-						<!--	<footer> -->
-								<!--<div class="pagination">
-								<!	<a href="#" class="previous">Prev</a> -->
-								<!--	<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Siguiente</a> -->
-								</div>
-						<!--	</footer> 
-
-					</div>
-
-						<!- Footer -->
-						<footer id="footer" style="margin-top: 0; padding-top: 10px; width: 100%; box-sizing: border-box; color: #212931;">
-							<section style="text-align: left;">
-								<form method="get" action="mailto:rodolivares1@gmail.com" enctype="text/plain" style="color: #212931;">
-									<div class="fields">
-										<div class="field">
-											<label for="name" style="color: #212931;">Nombre</label>
-											<input type="text" name="name" id="name" 
-												style="border: 1px solid #212931; color: #212931;" required />
-										</div>
-										<div class="field">
-											<label for="email" style="color: #212931;">Email</label>
-											<input type="email" name="email" id="email" 
-												style="border: 1px solid #212931; color: #212931;" required />
-										</div>
-										<div class="field">
-											<label for="message" style="color: #212931;">Mensaje</label>
-											<textarea name="message" id="message" rows="3" 
-												style="border: 1px solid #212931; color: #212931;" required></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li>
-											<input type="submit" value="Enviar mensaje" 
-												style="background-color: #ffffff !important; color: #212931 !important; border: 1px solid #212931 !important; 
-												padding: 10px 20px !important; cursor: pointer !important; text-align: center !important; 
-												line-height: 30px !important; width: 100%; display: inline-block; text-transform: uppercase;" />
-										</li>
-									</ul>
-								</form>
-							</section>
-							<section class="split contact" style="text-align: left;">
-								<section class="alt" style="color: #212931;">
-									<h3 style="color: #212931;">Dirección</h3>
-									<p>Santiago, Chile<br /></p>
-								</section>
-								<section style="color: #212931;">
-									<h3 style="color: #212931;">Telefono</h3>
-									<p><a href="#" style="color: #212931;">(+56) 000-0000</a></p>
-								</section>
-								<section style="color: #212931;">
-									<h3 style="color: #212931;">Email</h3>
-									<p><a href="#" style="color: #212931;">rodolivares1@gmail.com</a></p>
-								</section>
-								<section style="color: #212931;">
-									<h3 style="color: #212931;">Social</h3>
-									<ul class="icons alt" style="list-style: none; padding: 0;">
-										<li><a href="https://www.instagram.com/fitolivares" class="icon brands alt fa-instagram" style="color: #212931;"><span class="label">Instagram</span></a></li>
-										<li><a href="https://www.linkedin.com/in/rodolivaresa/" class="icon brands alt fa-linkedin" style="color: #212931;"><span class="label">LinkedIn</span></a></li>
-										<li><a href="https://github.com/rolivaresIA" class="icon brands alt fa-github" style="color: #212931;"><span class="label">GitHub</span></a></li>
-									</ul>
-								</section>
-							</section>
-						</footer>
-
-						<!-- Botón para volver al inicio -->
-						<a href="#" id="back-to-top" style="display: none; position: fixed; bottom: 20px; right: 20px; background-color: #ffffff; color: #212931; border: 4px solid #212931; padding: 20px; border-radius: 50%; text-align: center; cursor: pointer; font-size: 40px; transition: all 0.3s ease; width: 100px; height: 100px;">
-							↑
-						</a>
-
-						<!-- Estilos del botón de subir -->
-						<style>
-							/* Estilo para el botón de "Volver al inicio" */
-							#back-to-top {
-								background-color: #ffffff; /* Fondo blanco */
-								color: #212931; /* Texto oscuro */
-								border: 4px solid #212931; /* Borde más grueso y oscuro */
-								border-radius: 50%; /* Hacerlo completamente circular */
-								display: none; /* Inicia oculto */
-								width: 100px; /* Botón grande */
-								height: 100px; /* Botón grande */
-								font-size: 60px; /* Flecha más grande */
-								line-height: 60px; /* Subir la flecha para centrarla */
-								text-align: center;
-							}
-
-							/* Efecto hover para el botón de volver al inicio */
-							#back-to-top:hover {
-								background-color: #212931; /* Fondo oscuro al pasar el mouse */
-								color: #ffffff; /* Texto blanco */
-								border-color: #ffffff; /* Borde blanco */
-							}
-						</style>
-
-						<!-- Script para el scroll al inicio -->
-						<script>
-							// Mostrar el botón cuando se hace scroll hacia abajo
-							window.onscroll = function() {
-								var button = document.getElementById("back-to-top");
-								if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-									button.style.display = "block"; // Muestra el botón
-								} else {
-									button.style.display = "none"; // Oculta el botón
-								}
-							};
-
-							// Hacer que el botón haga scroll al inicio al hacer click
-							document.getElementById("back-to-top").onclick = function(event) {
-								event.preventDefault();
-								window.scrollTo({ top: 0, behavior: 'smooth' });
-							};
-						</script>
-
-		<!-- Copyright -->
-		<div id="copyright" style="margin-top: 20px; margin-bottom: 20px;">
-			<ul style="margin: 0; padding: 0; font-size: 14px; text-align: center; color: #ffffff;">
-				<li>&copy; 2024 Copyright</li>
-				<li>Design: <a href="https://html5up.net" style="color: #ffffff;">HTML5 UP</a></li>
-			</ul>
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+  <footer>
+    <div class="wrap">
+      <p>Rodolfo Olivares | <a href="mailto:rolivaresal@gmail.com">rolivaresal@gmail.com</a> | <a href="https://www.linkedin.com/in/rodolivaresa/">LinkedIn</a> | <a href="https://github.com/rolivaresIA">GitHub</a></p>
+    </div>
+  </footer>
+</body>
 </html>
