@@ -1,0 +1,33 @@
+:root {
+  --bg: #ffffff; --fg: #1c2b33; --muted: #5b7584; --accent: #2f6f8f; --card: #f4f7f9; --line: #dce5ea;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #11181c; --fg: #e6edf0; --muted: #9db2bd; --accent: #6fb3d2; --card: #1a242a; --line: #2a3841; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--fg); background: var(--bg); }
+.wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+a { color: var(--accent); }
+.hero { padding: 64px 0 40px; border-bottom: 1px solid var(--line); }
+h1 { margin: 0; font-size: 2.4rem; letter-spacing: -0.5px; }
+.tagline { margin: 4px 0 18px; font-size: 1.2rem; color: var(--accent); font-weight: 600; }
+.lead { max-width: 720px; font-size: 1.05rem; }
+.links { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0 8px; }
+.btn { display: inline-block; padding: 10px 18px; border-radius: 8px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; }
+.btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+.small { font-size: 0.9rem; color: var(--muted); }
+section { padding: 34px 0 6px; }
+h2 { font-size: 1.4rem; margin: 0 0 16px; padding-bottom: 6px; border-bottom: 2px solid var(--line); }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 18px; }
+.card h3 { margin: 0 0 4px; font-size: 1.05rem; }
+.meta { margin: 0 0 10px; font-size: 0.85rem; color: var(--muted); }
+.card p { margin: 0 0 10px; font-size: 0.95rem; }
+.more { margin-top: 14px; font-size: 0.95rem; }
+.timeline { list-style: none; padding: 0; margin: 0; }
+.timeline li { padding: 8px 0; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.timeline span { color: var(--muted); white-space: nowrap; }
+.skills { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.skills li { background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 4px 14px; font-size: 0.9rem; }
+footer { margin-top: 40px; padding: 22px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 520px) { h1 { font-size: 1.9rem; } .hero { padding-top: 40px; } }
