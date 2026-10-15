@@ -1,89 +1,335 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rodolfo Olivares | Data Analyst | Data Science</title>
-  <meta name="description" content="Rodolfo Olivares, Data Analyst with experience in churn analytics, KPI design, A/B testing and machine learning (SQL, Python, R, BigQuery, Power BI). Based in Australia.">
+  <meta name="description" content="Rodolfo Olivares, Data Analyst with experience in churn analytics, KPI design, A/B testing and machine learning (SQL, Python, R, BigQuery, Power BI). From Chile, now in Australia.">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <meta property="og:title" content="Rodolfo Olivares | Data Analyst | Data Science">
   <meta property="og:description" content="Churn analytics, KPI design, A/B testing and machine learning. SQL, Python, R, BigQuery, Power BI.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rolivaresia.github.io/">
+  <meta property="og:image" content="https://rolivaresia.github.io/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script>try{var t=localStorage.getItem('theme');if(!t){t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'}document.documentElement.dataset.theme=t}catch(e){}</script>
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Rodolfo Olivares","jobTitle":"Data Analyst","url":"https://rolivaresia.github.io/","sameAs":["https://github.com/rolivaresIA","https://www.linkedin.com/in/rodolivaresa/"],"knowsAbout":["Data analysis","Churn analytics","Machine learning","SQL","Python","R"]}
+  </script>
 </head>
 <body>
-  <header class="hero">
-    <div class="wrap">
-      <h1>Rodolfo Olivares</h1>
-      <p class="tagline">Data Analyst | Data Science</p>
-      <p class="lead">I turn data into decisions: churn analytics, KPI design, A/B testing and predictive modelling with SQL, Python and R. Chilean industrial engineer with a postgraduate diploma in Data Science and in Artificial Intelligence (PUC Chile), now in Australia and open to data analyst and data science roles.</p>
-      <p class="links">
-        <a class="btn" href="https://github.com/rolivaresIA/Curriculum/raw/main/Rodolfo_Olivares_CV.pdf">Download CV (PDF)</a>
-        <a class="btn ghost" href="https://www.linkedin.com/in/rodolivaresa/">LinkedIn</a>
-        <a class="btn ghost" href="https://github.com/rolivaresIA">GitHub</a>
-        <a class="btn ghost" href="mailto:rolivaresal@gmail.com">Email</a>
-      </p>
-      <p class="small">Work rights: Working Holiday visa (subclass 462), full work rights in Australia.</p>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 6h18v12H3zM3 7l9 6 9-6"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M20 14.500A8.500 8.500 0 0 1 9.500 4 8.500 8.500 0 1 0 20 14.500z"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0-5-5m5 5 5-5M5 20h14"/></symbol>
+  </svg>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="#top" aria-label="Rodolfo Olivares, home"><span class="brand-mark">RO</span><span class="brand-name">Rodolfo Olivares</span></a>
+      <nav aria-label="Main">
+        <ul class="menu" id="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme" type="button" aria-label="Switch between light and dark theme"><svg class="ic ic-sun"><use href="#i-sun"/></svg><svg class="ic ic-moon"><use href="#i-moon"/></svg></button>
+        <a class="btn btn-sm" href="https://github.com/rolivaresIA/Curriculum/raw/main/Rodolfo_Olivares_CV.pdf">CV</a>
+        <button class="icon-btn burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+      </div>
     </div>
   </header>
 
-  <main class="wrap">
-    <section id="projects">
-      <h2>Featured projects</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Competitor Contact &amp; Churn Impact Analytics</h3>
-          <p class="meta">Claro Chile | BigQuery, SQL, Looker Studio</p>
-          <p>Automated pipeline that detects competitor calls and measures 5-day port-out risk over ~700k calls per day. It found a high-risk segment (calls over 5 minutes, ~1% of answered calls) with 4-6x higher port-out probability and enabled early-retention outreach to ~600 customers daily.</p>
-          <p><a href="https://github.com/rolivaresIA/Competitor-Contact-Churn-Impact-Analytics">View on GitHub</a></p>
-        </article>
-        <article class="card">
-          <h3>Silent-Sales KPI Redesign</h3>
-          <p class="meta">Claro Chile | Python, scikit-learn, BigQuery</p>
-          <p>Validated a low-quality-sales KPI (67% precision, 9% recall) and used an interpretable decision tree to propose two new definitions: strict (91.5% precision) and broad (33% recall). Includes a runnable demo on synthetic data.</p>
-          <p><a href="https://github.com/rolivaresIA/Silents-KPI-Sales-Quality-Fraud-Detection">View on GitHub</a></p>
-        </article>
-        <article class="card">
-          <h3>Machinery Failure Telemetry Analysis</h3>
-          <p class="meta">SALFA | R, tidyverse, ranger, pROC</p>
-          <p>Data-quality pipeline, EDA and a machine-learning model (logistic regression vs random forest, grouped cross-validation, ROC and precision-recall) to prioritise critical machine alerts. Fully reproducible on synthetic data.</p>
-          <p><a href="https://github.com/rolivaresIA/Machinery-Failure-Telemetry-Analysis">View on GitHub</a></p>
-        </article>
+  <main id="main">
+    <!-- ============================ HERO ============================ -->
+    <section class="hero" id="top">
+      <canvas id="net" aria-hidden="true"></canvas>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="badge"><span class="dot"></span> Open to data roles in Australia</p>
+          <h1>Hi, I'm <span class="grad">Rodolfo</span>.<br>I turn data into <span class="typed-wrap"><span id="typed" class="grad"></span><span class="caret" aria-hidden="true"></span></span></h1>
+          <p class="lead">Data Analyst and aspiring Data Scientist from Chile, now in Australia. Industrial engineer with postgraduate training in Data Science and AI, turning telecom, finance and heavy-equipment data into decisions people can act on.</p>
+          <div class="cta">
+            <a class="btn" href="#projects">See my projects</a>
+            <a class="btn btn-ghost" href="https://github.com/rolivaresIA/Curriculum/raw/main/Rodolfo_Olivares_CV.pdf"><svg class="ic"><use href="#i-down"/></svg> Download CV</a>
+          </div>
+          <ul class="social" aria-label="Social links">
+            <li><a href="https://www.linkedin.com/in/rodolivaresa/" aria-label="LinkedIn"><svg class="ic"><use href="#i-linkedin"/></svg></a></li>
+            <li><a href="https://github.com/rolivaresIA" aria-label="GitHub"><svg class="ic"><use href="#i-github"/></svg></a></li>
+            <li><a href="mailto:rolivaresal@gmail.com" aria-label="Email"><svg class="ic"><use href="#i-mail"/></svg></a></li>
+          </ul>
+        </div>
+
+        <div class="hero-stack" id="stack" aria-label="Sample visuals from my projects">
+          <article class="gcard g1" data-depth="18">
+            <header><span>Port-out within 5 days, by call length</span><em>pattern from my Claro project (illustrative)</em></header>
+            <div class="bars" role="img" aria-label="Bar chart: the port-out rate is far higher for calls longer than 5 minutes">
+              <div class="bar"><i style="--h:6%"></i><b>6-10s</b></div>
+              <div class="bar"><i style="--h:8%"></i><b>10s-1m</b></div>
+              <div class="bar"><i style="--h:22%"></i><b>1-5m</b></div>
+              <div class="bar hot"><i style="--h:92%"></i><b>&gt;5m</b></div>
+            </div>
+          </article>
+          <article class="gcard g2" data-depth="30">
+            <header><span>ROC AUC</span><em>synthetic demo</em></header>
+            <div class="ring" style="--p:77"><svg viewBox="0 0 80 80"><circle class="trk" cx="40" cy="40" r="34"/><circle class="val" cx="40" cy="40" r="34" pathLength="100"/></svg><strong>0.77</strong></div>
+            <p>Critical-alert model, held-out machines</p>
+          </article>
+          <article class="gcard g3" data-depth="12">
+            <header><span>query.sql</span><em>BigQuery</em></header>
+            <pre><code><span class="k">SELECT</span> duration_bucket,
+  <span class="k">SAFE_DIVIDE</span>(ported_5d, contacted)
+    <span class="k">AS</span> port_out_rate
+<span class="k">FROM</span> churn_reporting.calls
+<span class="k">GROUP BY</span> 1 <span class="k">ORDER BY</span> 2 <span class="k">DESC</span>;</code></pre>
+          </article>
+        </div>
       </div>
-      <p class="more">More: <a href="https://github.com/rolivaresIA/School-Dropout-Dashboard-PowerBI">School dropout analysis (R + Power BI)</a> | <a href="https://github.com/rolivaresIA/EDA_Twitch">Twitch streamers EDA (R)</a> | <a href="https://github.com/rolivaresIA/Data_Cleaning_Project">E-commerce data cleaning (R)</a></p>
+      <a class="scroll-hint" href="#about" aria-label="Scroll to About"><span></span></a>
     </section>
 
-    <section id="experience">
-      <h2>Experience</h2>
-      <ul class="timeline">
-        <li><span class="what"><strong>Data Analyst, Business &amp; Churn Analytics</strong> | Claro Chile</span> <span>2025 - 2026</span></li>
-        <li><span class="what"><strong>Business Analyst, Telematics Analytics</strong> | Salinas y Fabres (SALFA)</span> <span>2021 - 2022</span></li>
-        <li><span class="what"><strong>Data Analytics Intern, Retirement Readiness</strong> | Principal Financial Group</span> <span>2019 - 2020</span></li>
-      </ul>
+    <!-- ============================ STATS ============================ -->
+    <section class="stats" aria-label="Highlights from my work">
+      <div class="wrap stats-grid">
+        <div class="stat reveal"><strong><span data-count="700">0</span>k+</strong><span>calls analysed per day in a churn pipeline</span></div>
+        <div class="stat reveal"><strong>4-6x</strong><span>higher port-out risk found in a key segment</span></div>
+        <div class="stat reveal"><strong>~<span data-count="600">0</span></strong><span>customers prioritised daily for retention</span></div>
+        <div class="stat reveal"><strong><span data-count="85">0</span>%</strong><span>faster reporting after automating with VBA and SQL</span></div>
+      </div>
     </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <ul class="timeline">
-        <li><span class="what"><strong>Postgraduate Diploma in Artificial Intelligence</strong> | Pontificia Universidad Católica de Chile</span> <span>2025</span></li>
-        <li><span class="what"><strong>Postgraduate Diploma in Data Science</strong> | Pontificia Universidad Católica de Chile</span> <span>2021</span></li>
-        <li><span class="what"><strong>BSc in Engineering (Industrial Engineering)</strong> | Universidad Adolfo Ibáñez</span> <span>2014 - 2020</span></li>
-      </ul>
+    <!-- ============================ ABOUT ============================ -->
+    <section id="about" class="section">
+      <div class="wrap">
+        <h2 class="reveal">A bit about me</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I'm an industrial engineer from Santiago who fell in love with turning messy data into clear decisions. I started in financial services, moved into heavy-equipment telematics, and most recently worked on churn analytics in telecommunications.</p>
+            <p>I enjoy the whole path: SQL pipelines and statistics at the bottom, models and experiments in the middle, and dashboards that people actually use at the top. I like projects where a number changes what a team does tomorrow, such as who to call first, which KPI to trust, or which machine to service.</p>
+            <p>Right now I'm in Australia on a Working Holiday visa (full work rights), looking for my next data analyst or data science role.</p>
+            <p class="outside"><strong>Outside work:</strong> football (soccer), motocross and snowboarding. I like fast feedback loops, on and off the screen.</p>
+          </div>
+          <div class="facts reveal">
+            <div class="fact"><span class="emo" aria-hidden="true">📍</span><div><b>From Santiago, Chile</b><small>Industrial engineer (UAI)</small></div></div>
+            <div class="fact"><span class="emo" aria-hidden="true">🌏</span><div><b>Now in Australia</b><small>Working Holiday visa 462, full work rights</small></div></div>
+            <div class="fact"><span class="emo" aria-hidden="true">🎓</span><div><b>Two postgraduate diplomas</b><small>Data Science (2021) and Artificial Intelligence (2025), PUC Chile</small></div></div>
+            <div class="fact"><span class="emo" aria-hidden="true">🛠️</span><div><b>Day to day</b><small>SQL, Python, R, BigQuery, Power BI, Looker Studio</small></div></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="skills">
-        <li>SQL (BigQuery)</li><li>Python (pandas, scikit-learn)</li><li>R (tidyverse, ggplot2)</li>
-        <li>Power BI</li><li>Looker Studio</li><li>Tableau</li><li>Google Cloud Platform</li>
-        <li>A/B testing</li><li>Statistical analysis</li><li>Machine learning</li><li>KPI design</li><li>Git</li>
-      </ul>
+    <!-- ============================ EXPERIENCE ============================ -->
+    <section id="experience" class="section alt">
+      <div class="wrap">
+        <h2 class="reveal">Experience</h2>
+        <p class="sub reveal">Click a role to see what I did.</p>
+        <ol class="timeline">
+          <li class="job reveal">
+            <button class="job-head" type="button" aria-expanded="true" aria-controls="job1">
+              <img src="assets/claro.png" alt="" width="48" height="48" loading="lazy">
+              <span class="job-title"><b>Data Analyst, Business &amp; Churn Analytics</b><small>Claro Chile</small></span>
+              <span class="job-date">2025 - 2026</span><span class="chev" aria-hidden="true"></span>
+            </button>
+            <div class="job-body" id="job1">
+              <ul>
+                <li>Built an automated <b>BigQuery pipeline</b> that detects competitor calls and measures 5-day port-out risk across ~700k daily calls, with Looker Studio reporting for management.</li>
+                <li>Identified segments with <b>4-6x higher churn probability</b>, enabling retention outreach to ~600 customers per day.</li>
+                <li>Segmented customers by churn risk and ran <b>A/B tests</b> (control vs treatment) to measure retention campaigns; found conversion differences of up to ~35% between segments.</li>
+                <li>Automated churn, behaviour and competitor reports, cutting analysis and execution time by up to ~65%.</li>
+                <li>Redesigned a low-quality sales KPI (67% precision, 9% recall) with a decision tree, proposing rules with 91.5% precision or 33% recall.</li>
+              </ul>
+              <p class="tags"><span>BigQuery</span><span>SQL</span><span>Looker Studio</span><span>A/B testing</span><span>Python</span></p>
+            </div>
+          </li>
+          <li class="job reveal">
+            <button class="job-head" type="button" aria-expanded="false" aria-controls="job2">
+              <img src="assets/salfa.png" alt="" width="48" height="48" loading="lazy">
+              <span class="job-title"><b>Business Analyst, Telematics Analytics</b><small>Salinas y Fabres (SALFA)</small></span>
+              <span class="job-date">2021 - 2022</span><span class="chev" aria-hidden="true"></span>
+            </button>
+            <div class="job-body" id="job2" hidden>
+              <ul>
+                <li>Led a corporate <b>telematics data integration</b> project, improving internal coordination and collaboration with customers.</li>
+                <li>Analysed machine telemetry to find opportunities in <b>failure prediction</b> and after-sales service optimisation.</li>
+                <li>Produced KPI reports to support management decisions, and managed stakeholders by providing support and training.</li>
+              </ul>
+              <p class="tags"><span>Telemetry</span><span>KPI reporting</span><span>R</span><span>Stakeholder management</span></p>
+            </div>
+          </li>
+          <li class="job reveal">
+            <button class="job-head" type="button" aria-expanded="false" aria-controls="job3">
+              <img src="assets/principal.png" alt="" width="48" height="48" loading="lazy">
+              <span class="job-title"><b>Data Analytics Intern, Retirement Readiness</b><small>Principal Financial Group</small></span>
+              <span class="job-date">2019 - 2020</span><span class="chev" aria-hidden="true"></span>
+            </button>
+            <div class="job-body" id="job3" hidden>
+              <ul>
+                <li>Analysed pension and retirement data to generate financial insights supporting retirement planning.</li>
+                <li>Automated and optimised reporting with <b>VBA and SQL</b>, reducing delivery times by 85.3%.</li>
+                <li>Worked with financial analysts and advisors to improve report quality and data-driven decisions.</li>
+              </ul>
+              <p class="tags"><span>SQL</span><span>VBA</span><span>Excel</span><span>Process automation</span></p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================ PROJECTS ============================ -->
+    <section id="projects" class="section">
+      <div class="wrap">
+        <h2 class="reveal">Projects</h2>
+        <p class="sub reveal">Work projects and personal ones. Click a card for the story and the results.</p>
+        <div class="filters reveal" role="group" aria-label="Filter projects">
+          <button class="chip on" type="button" data-filter="all">All</button>
+          <button class="chip" type="button" data-filter="work">Work</button>
+          <button class="chip" type="button" data-filter="personal">Personal</button>
+        </div>
+        <div class="cards" id="cards">
+          <article class="pcard reveal" data-type="work" data-id="competitor" tabindex="0" role="button" aria-label="Open details: Competitor Contact and Churn Impact Analytics">
+            <div class="pcard-art a1"><span aria-hidden="true">📞</span></div>
+            <div class="pcard-body">
+              <p class="kind"><span class="pill">Work</span><span class="pill ok">Real results</span></p>
+              <h3>Competitor Contact &amp; Churn Impact Analytics</h3>
+              <p>Daily BigQuery pipeline linking competitor calls to customers and measuring port-out within 5 days. Found a segment with 4-6x higher risk.</p>
+              <p class="tags"><span>BigQuery</span><span>SQL</span><span>Looker Studio</span></p>
+            </div>
+          </article>
+          <article class="pcard reveal" data-type="work" data-id="kpi" tabindex="0" role="button" aria-label="Open details: Silent-Sales KPI Redesign">
+            <div class="pcard-art a2"><span aria-hidden="true">🌳</span></div>
+            <div class="pcard-body">
+              <p class="kind"><span class="pill">Work</span><span class="pill ok">Real results</span><span class="pill syn">Synthetic demo</span></p>
+              <h3>Silent-Sales KPI Redesign</h3>
+              <p>Validated a sales-quality KPI (67% precision, 9% recall) and used a decision tree to propose two new rules, with a runnable demo.</p>
+              <p class="tags"><span>Python</span><span>scikit-learn</span><span>BigQuery</span></p>
+            </div>
+          </article>
+          <article class="pcard reveal" data-type="work" data-id="telemetry" tabindex="0" role="button" aria-label="Open details: Machinery Failure Telemetry Analysis">
+            <div class="pcard-art a3"><span aria-hidden="true">🚜</span></div>
+            <div class="pcard-body">
+              <p class="kind"><span class="pill">Work</span><span class="pill syn">Synthetic data</span></p>
+              <h3>Machinery Failure Telemetry Analysis</h3>
+              <p>Data quality, EDA and an ML model (logistic regression vs random forest) to prioritise critical machine alerts. Fully reproducible.</p>
+              <p class="tags"><span>R</span><span>ranger</span><span>ROC / PR</span></p>
+            </div>
+          </article>
+          <article class="pcard reveal" data-type="personal" data-id="dropout" tabindex="0" role="button" aria-label="Open details: School Dropout Dashboard">
+            <div class="pcard-art a4"><span aria-hidden="true">🎓</span></div>
+            <div class="pcard-body">
+              <p class="kind"><span class="pill pers">Personal</span><span class="pill">Technical assessment</span></p>
+              <h3>School Dropout Dashboard (Chile)</h3>
+              <p>332,766 students left subsidised private schools in 2023-24. R processing plus an interactive Power BI dashboard.</p>
+              <p class="tags"><span>R</span><span>Power BI</span></p>
+            </div>
+          </article>
+          <article class="pcard reveal" data-type="personal" data-id="twitch" tabindex="0" role="button" aria-label="Open details: Twitch Streamers EDA">
+            <div class="pcard-art a5"><span aria-hidden="true">🎮</span></div>
+            <div class="pcard-body">
+              <p class="kind"><span class="pill pers">Personal</span></p>
+              <h3>Twitch Streamers EDA</h3>
+              <p>What do the top 1,000 Twitch channels do? Data-driven advice for a friend who wants to grow as a Spanish-speaking streamer.</p>
+              <p class="tags"><span>R</span><span>ggplot2</span><span>EDA</span></p>
+            </div>
+          </article>
+          <article class="pcard reveal" data-type="personal" data-id="shein" tabindex="0" role="button" aria-label="Open details: E-commerce Data Cleaning">
+            <div class="pcard-art a6"><span aria-hidden="true">🧹</span></div>
+            <div class="pcard-body">
+              <p class="kind"><span class="pill pers">Personal</span></p>
+              <h3>E-commerce Data Cleaning</h3>
+              <p>21 messy files and 82,105 rows turned into 71,480 unique products, with every cleaning decision documented.</p>
+              <p class="tags"><span>R</span><span>tidyverse</span><span>Data quality</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ SKILLS ============================ -->
+    <section id="skills" class="section alt">
+      <div class="wrap">
+        <h2 class="reveal">Skills</h2>
+        <p class="sub reveal">Filter by area, and hover or tap a skill to see where I used it.</p>
+        <div class="filters reveal" role="group" aria-label="Filter skills">
+          <button class="chip on" type="button" data-skill="all">All</button>
+          <button class="chip" type="button" data-skill="code">Code and data</button>
+          <button class="chip" type="button" data-skill="bi">BI and visualisation</button>
+          <button class="chip" type="button" data-skill="ml">Analytics and ML</button>
+          <button class="chip" type="button" data-skill="biz">Business</button>
+        </div>
+        <ul class="skills" id="skills-list">
+          <li data-cat="code" tabindex="0" data-used="Churn pipeline at Claro; data for the KPI redesign">SQL (BigQuery)</li>
+          <li data-cat="code" tabindex="0" data-used="KPI redesign: decision tree and the synthetic demo">Python (pandas, scikit-learn)</li>
+          <li data-cat="code" tabindex="0" data-used="Telemetry ML model, Twitch EDA, data cleaning, dropout analysis">R (tidyverse)</li>
+          <li data-cat="code" tabindex="0" data-used="Reporting automation at Principal (85.3% faster delivery)">Excel and VBA</li>
+          <li data-cat="code" tabindex="0" data-used="Version control for all my projects on GitHub">Git</li>
+          <li data-cat="code" tabindex="0" data-used="BigQuery pipelines at Claro">Google Cloud Platform</li>
+          <li data-cat="code" tabindex="0" data-used="Part of my data-collection toolkit">Web scraping</li>
+          <li data-cat="bi" tabindex="0" data-used="Dropout dashboard">Power BI</li>
+          <li data-cat="bi" tabindex="0" data-used="Daily churn and competitor reporting at Claro">Looker Studio</li>
+          <li data-cat="bi" tabindex="0" data-used="Dashboards and reporting">Tableau</li>
+          <li data-cat="ml" tabindex="0" data-used="Retention campaigns at Claro (control vs treatment)">A/B testing</li>
+          <li data-cat="ml" tabindex="0" data-used="Bias checks, outliers, descriptive and inferential analysis">Statistical analysis</li>
+          <li data-cat="ml" tabindex="0" data-used="Logistic regression, random forest, decision trees">Machine learning</li>
+          <li data-cat="ml" tabindex="0" data-used="Part of my AI and data science training">Deep learning</li>
+          <li data-cat="ml" tabindex="0" data-used="Silent-sales KPI and the sales-quality rules">KPI design</li>
+          <li data-cat="biz" tabindex="0" data-used="Telematics integration project at SALFA">Stakeholder management</li>
+          <li data-cat="biz" tabindex="0" data-used="Reports and workflows automated at Claro and Principal">Process automation</li>
+        </ul>
+        <p class="skill-note" id="skill-note" aria-live="polite">Hover or tap a skill to see where I used it.</p>
+      </div>
+    </section>
+
+    <!-- ============================ EDUCATION ============================ -->
+    <section id="education" class="section">
+      <div class="wrap">
+        <h2 class="reveal">Education</h2>
+        <div class="edu-grid">
+          <article class="edu reveal"><img src="assets/puc.png" alt="" width="56" height="56" loading="lazy"><div><b>Postgraduate Diploma in Artificial Intelligence</b><small>Pontificia Universidad Católica de Chile</small><span>2025</span></div></article>
+          <article class="edu reveal"><img src="assets/puc.png" alt="" width="56" height="56" loading="lazy"><div><b>Postgraduate Diploma in Data Science</b><small>Pontificia Universidad Católica de Chile</small><span>2021</span></div></article>
+          <article class="edu reveal"><img src="assets/uai.png" alt="" width="56" height="56" loading="lazy"><div><b>BSc in Engineering (Industrial Engineering)</b><small>Universidad Adolfo Ibáñez</small><span>2014 - 2020</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ CONTACT ============================ -->
+    <section id="contact" class="section contact">
+      <div class="wrap">
+        <div class="contact-card reveal">
+          <h2>Let's talk data</h2>
+          <p>I'm looking for my next data analyst or data science role in Australia. If you have a team that needs someone who can go from SQL to stakeholders, I'd love to hear from you.</p>
+          <div class="cta center">
+            <button class="btn" id="copy" type="button" data-email="rolivaresal@gmail.com"><svg class="ic"><use href="#i-mail"/></svg> <span id="copy-label">rolivaresal@gmail.com</span></button>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/rodolivaresa/"><svg class="ic"><use href="#i-linkedin"/></svg> LinkedIn</a>
+            <a class="btn btn-ghost" href="https://github.com/rolivaresIA"><svg class="ic"><use href="#i-github"/></svg> GitHub</a>
+          </div>
+          <p class="small">Click the email to copy it. Work rights: Working Holiday visa (subclass 462), full work rights in Australia.</p>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap">
-      <p>Rodolfo Olivares | <a href="mailto:rolivaresal@gmail.com">rolivaresal@gmail.com</a> | <a href="https://www.linkedin.com/in/rodolivaresa/">LinkedIn</a> | <a href="https://github.com/rolivaresIA">GitHub</a></p>
-    </div>
+  <footer class="footer">
+    <div class="wrap"><p>© <span id="year">2026</span> Rodolfo Olivares. Built with plain HTML, CSS and JavaScript.</p></div>
   </footer>
+
+  <dialog id="modal" aria-labelledby="m-title">
+    <button class="m-close" id="m-close" type="button" aria-label="Close">×</button>
+    <div id="m-body"></div>
+  </dialog>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
